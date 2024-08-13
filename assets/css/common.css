@@ -1,0 +1,39 @@
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+  .scroll-hidden{
+    overflow: hidden;
+  }
+
+  .mo-br{display: none;}
+
+/* 반응형------------------------- */
+
+@media (max-width:1024px) {
+    header .menu{display: none;} 
+    header .btn-menu{display: block;} 
+    header .side-nav{ display: block; position: fixed; top: 0; right: 0; height: 100%; width: 80%; background: #fff; transform: translateX(100%); transition: .3s; }
+    header .side-nav.on{ transform: translateX(0); }
+    #main .section-title strong{
+     
+    }
+
+}
+
+@media (max-width:767px) {
+    .sc-intro h2{ font-size: 50px; }
+    .sc-intro ul{ grid-template-columns: repeat(2,1fr); }
+    #main .section-title strong{
+      font-size: 30px;
+      line-height: 1.4;
+    }
+
+    
+}
+
+
